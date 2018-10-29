@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Canvas</title>
+</head>
+<body>
+<div id="fps-output"></div>
+<canvas width="400px" height="300px" id="myCanvas" style="border: 1px black solid"></canvas>
+</body>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.width = 400;
+    ctx.height = 300;
+    w = 20;     //
+    snake = [[0, 0]]; // snake start position
+    direction = 1;  // default start direction (right)
+    foodpos = [0, 20]; // initial food position
+    gameSpeed = 200; // 0 for max speed
+
+</script>
+<script src="/js/food.js"></script>
+<script src="/js/fps.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/bot.js"></script>
+<script src="/js/keys.js"></script>
+</html>
